@@ -4,32 +4,23 @@
  * and open the template in the editor.
  */
 var valorMaxim = Number.MAX_VALUE;
-
 var divLista= document.getElementById("listaValores");
-
 divLista.innerHTML="<ul>"+
         "<li>"+valorMaxim+"</li>"+
         "<li>"+"</li>"+
         "</ul>";
-
 var numero = 10;
 console.log(isNaN(numero));
-
 var key = setInterval( function(){
     console.log("hola");
 }, 1000);
-
 window.setTimeout(nombreFunction,6000);
-
 function nombreFunction(){
      window.clearInterval(key);
 }
-
 var opened= window.open("ventanaNueva.html","_blank"
                             ,"toolbar=no,width=200,height=100");
-
 window.setTimeout(function(){
     opened.document.getElementById("pop").innerHTML="PepeLu";
     opened.saludoVentanNueva();
 },1000);
-

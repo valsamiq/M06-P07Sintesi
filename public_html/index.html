@@ -9,28 +9,91 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
     </head>
-    <body onload="screenInfo(); browserInfo();">
+    <body onload="screenInfo(); browserInfo(); infoUrl();">
         <div class="container">
-            <div class="col-sm-12">
+            <div class="col-sm-4">
                 <div class="dropdown">
-                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Info Pantalla
+                    <button class="btn btn-primary dropdown-toggle btn-block" type="button" data-toggle="dropdown">Pantalla Info
                         <span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu" id="listDisplay">
-                        
+
                     </ul>
                 </div>
             </div>
-            <div class="col-sm-12">
+            <div class="col-sm-4">
                 <div class="dropdown">
-                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Info Pantalla
+                    <button class="btn btn-primary dropdown-toggle btn-block" type="button" data-toggle="dropdown">Browser Info
                         <span class="caret"></span>
                     </button>
-                    <ul class="dropdown-menu" id="listDisplay">
-                        
+                    <ul class="dropdown-menu" id="listBrowser">
+
                     </ul>
                 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle btn-block" type="button" data-toggle="dropdown">Url Info
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" id="listUrl">
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-2 hidden"></div>
+            <div class="col-sm-3">
+                <div class="dropdown" align="center">
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">1
+                        <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                        <li><span class="glyphicon glyphicon-home"></span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="dropdown" align="center">
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">2
+                        <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                        <li><span class="glyphicon glyphicon-euro"></span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="dropdown" align="center">
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">3
+                        <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                        <li><span class="glyphicon glyphicon-off"></span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="dropdown" align="center">
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">4
+                        <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                        <li><span class="glyphicon glyphicon-user"></span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="dropdown" align="center">
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">5
+                        <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                        <li><span class="glyphicon glyphicon-glass"></span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-12" align="center">
+            <h2>-Built-in Game-</h2>
+            </div>
+            <div class="col-sm-12" align="center">
+            <button onclick="NewWindow()" type="button" class="btn btn-danger btn-lg">Start</button>
             </div>
         </div>
     </body>
